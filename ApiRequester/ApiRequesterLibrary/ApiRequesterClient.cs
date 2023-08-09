@@ -34,6 +34,29 @@ public class ApiRequesterClient
         return responseData;
     }
 
+    public async Task<ResponseData<T>> UpdateAsync<T>(T item, string uri, CancellationToken cancellationToken)
+    {
+        var responseData = new ResponseData<T>();
+
+        var request = new HttpRequestMessage(HttpMethod.Put, uri);
+        var jsonData = JsonConvert.SerializeObject(item);
+        var stringContent = new StringContent(jsonData, UnicodeEncoding.UTF8, "application/json");
+
+        using (var response = await this.httpClient.PutAsync(uri, stringContent, cancellationToken))
+        {
+            using (var responseStream = await response.Content.ReadAsStreamAsync(cancellationToken))
+            {
+                using (var streamReader = new StreamReader(responseStream))
+                using (var jsonTextReader = new JsonTextReader(streamReader))
+                {
+                    responseData = this.serializer.Deserialize<ResponseData<T>>(jsonTextReader);
+                }
+            }
+        }
+
+        return responseData;
+    }
+
     public async Task<ResponseData<T>> PostAsync<T>(T item, string uri, CancellationToken cancellationToken)
     {
         var responseData = new ResponseData<T>();
