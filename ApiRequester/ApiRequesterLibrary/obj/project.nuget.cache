@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "G0IdZ10tFf6q4W7h6PY1wJ+l8EFJKHCAm9vESstMZN1RjVeO0n79AM87gWnQJ7PCIDrkZ9pTwGlhkKyhQaZfag==",
+  "dgSpecHash": "eerD2wWUTFq7UDpieiG7TEsoLEFYFoA5BXTx0MizwWNyIokDgMwly7CUmdDgBABYXOww4yLOWzOgXFikVl6HcA==",
   "success": true,
   "projectFilePath": "D:\\C# Projekty\\_Playground\\ApiRequester\\ApiRequester\\ApiRequesterLibrary\\ApiRequesterLibrary.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Hp\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,0 +1,12 @@
+D:\C# Projekty\_Playground\ApiRequester\ApiRequester\ApiRequesterLibrary\bin\Debug\net6.0\ApiRequesterLibrary.deps.json
+D:\C# Projekty\_Playground\ApiRequester\ApiRequester\ApiRequesterLibrary\bin\Debug\net6.0\ApiRequesterLibrary.dll
+D:\C# Projekty\_Playground\ApiRequester\ApiRequester\ApiRequesterLibrary\bin\Debug\net6.0\ref\ApiRequesterLibrary.dll
+D:\C# Projekty\_Playground\ApiRequester\ApiRequester\ApiRequesterLibrary\bin\Debug\net6.0\ApiRequesterLibrary.pdb
+D:\C# Projekty\_Playground\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ApiRequesterLibrary.csproj.AssemblyReference.cache
+D:\C# Projekty\_Playground\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ApiRequesterLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# Projekty\_Playground\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ApiRequesterLibrary.AssemblyInfoInputs.cache
+D:\C# Projekty\_Playground\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ApiRequesterLibrary.AssemblyInfo.cs
+D:\C# Projekty\_Playground\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ApiRequesterLibrary.csproj.CoreCompileInputs.cache
+D:\C# Projekty\_Playground\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ApiRequesterLibrary.dll
+D:\C# Projekty\_Playground\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ref\ApiRequesterLibrary.dll
+D:\C# Projekty\_Playground\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ApiRequesterLibrary.pdb
