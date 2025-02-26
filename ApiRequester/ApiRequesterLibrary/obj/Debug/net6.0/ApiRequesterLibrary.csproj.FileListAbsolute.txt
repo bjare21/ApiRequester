@@ -10,3 +10,16 @@ D:\C# Projekty\_Playground\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Deb
 D:\C# Projekty\_Playground\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ApiRequesterLibrary.dll
 D:\C# Projekty\_Playground\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ref\ApiRequesterLibrary.dll
 D:\C# Projekty\_Playground\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ApiRequesterLibrary.pdb
+C:\Users\jarek\C#\ApiRequester\ApiRequester\ApiRequesterLibrary\bin\Debug\net6.0\ApiRequesterLibrary.deps.json
+C:\Users\jarek\C#\ApiRequester\ApiRequester\ApiRequesterLibrary\bin\Debug\net6.0\ApiRequesterLibrary.dll
+C:\Users\jarek\C#\ApiRequester\ApiRequester\ApiRequesterLibrary\bin\Debug\net6.0\ApiRequesterLibrary.pdb
+C:\Users\jarek\C#\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ApiRequesterLibrary.csproj.AssemblyReference.cache
+C:\Users\jarek\C#\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ApiRequesterLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jarek\C#\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ApiRequesterLibrary.AssemblyInfoInputs.cache
+C:\Users\jarek\C#\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ApiRequesterLibrary.AssemblyInfo.cs
+C:\Users\jarek\C#\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ApiRequesterLibrary.csproj.CoreCompileInputs.cache
+C:\Users\jarek\C#\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ApiRequesterLibrary.sourcelink.json
+C:\Users\jarek\C#\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ApiRequesterLibrary.dll
+C:\Users\jarek\C#\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\refint\ApiRequesterLibrary.dll
+C:\Users\jarek\C#\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ApiRequesterLibrary.pdb
+C:\Users\jarek\C#\ApiRequester\ApiRequester\ApiRequesterLibrary\obj\Debug\net6.0\ref\ApiRequesterLibrary.dll

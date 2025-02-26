@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jarek\\C#\\ApiRequester\\ApiRequester\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hp\\Desktop\\xKlasaClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3B96F0C-E85C-4A16-8785-3DA7F622F220}|ApiRequesterLibrary\\ApiRequesterLibrary.csproj|c:\\users\\jarek\\c#\\apirequester\\apirequester\\apirequesterlibrary\\apirequesterclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3B96F0C-E85C-4A16-8785-3DA7F622F220}|ApiRequesterLibrary\\ApiRequesterLibrary.csproj|solutionrelative:apirequesterlibrary\\apirequesterclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3B96F0C-E85C-4A16-8785-3DA7F622F220}|ApiRequesterLibrary\\ApiRequesterLibrary.csproj|c:\\users\\jarek\\c#\\apirequester\\apirequester\\apirequesterlibrary\\responsedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3B96F0C-E85C-4A16-8785-3DA7F622F220}|ApiRequesterLibrary\\ApiRequesterLibrary.csproj|solutionrelative:apirequesterlibrary\\responsedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "xKlasaClient.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\xKlasaClient.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Hp\\Desktop\\xKlasaClient.cs",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\xKlasaClient.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Hp\\Desktop\\xKlasaClient.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-08-09T13:52:06.125Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResponseData.cs",
+              "DocumentMoniker": "C:\\Users\\jarek\\C#\\ApiRequester\\ApiRequester\\ApiRequesterLibrary\\ResponseData.cs",
+              "RelativeDocumentMoniker": "ApiRequesterLibrary\\ResponseData.cs",
+              "ToolTip": "C:\\Users\\jarek\\C#\\ApiRequester\\ApiRequester\\ApiRequesterLibrary\\ResponseData.cs",
+              "RelativeToolTip": "ApiRequesterLibrary\\ResponseData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T12:29:19.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApiRequesterClient.cs",
+              "DocumentMoniker": "C:\\Users\\jarek\\C#\\ApiRequester\\ApiRequester\\ApiRequesterLibrary\\ApiRequesterClient.cs",
+              "RelativeDocumentMoniker": "ApiRequesterLibrary\\ApiRequesterClient.cs",
+              "ToolTip": "C:\\Users\\jarek\\C#\\ApiRequester\\ApiRequester\\ApiRequesterLibrary\\ApiRequesterClient.cs",
+              "RelativeToolTip": "ApiRequesterLibrary\\ApiRequesterClient.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAYwBkAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T12:29:19.449Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

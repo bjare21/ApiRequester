@@ -1,8 +1,10 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.Text;
+using System.Threading;
 
 namespace ApiRequesterLibrary;
-public class ApiRequesterClient
+public class ApiRequesterClient : IApiRequesterClient
 {
     private readonly HttpClient httpClient;
     private readonly JsonSerializer serializer;
@@ -34,6 +36,52 @@ public class ApiRequesterClient
         return responseData;
     }
 
+    /// <summary>
+    /// Get synchronously collection of items and serialize them to given ResponseData with given Pagination object
+    /// </summary>
+    /// <typeparam name="T">Return type of requested items.</typeparam>
+    /// <typeparam name="P">Return type of pagination data object.</typeparam>
+    /// <param name="uri">Endpoint uri.</param>
+    /// <param name="cancellationToken">Cancellation token.</param>
+    /// <returns>Response data with requested data and pagination object.</returns>
+    public async Task<ResponseData<IReadOnlyCollection<T>, P>> GetListAsync<T, P>(string uri, CancellationToken cancellationToken = default)
+    {
+        var responseData = new ResponseData<IReadOnlyCollection<T>, P>();
+
+        var request = new HttpRequestMessage(HttpMethod.Get, uri);
+        using (var result = await this.httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead, cancellationToken))
+        {
+            using (var responseStream = await result.Content.ReadAsStreamAsync(cancellationToken))
+            {
+                using (var streamReader = new StreamReader(responseStream))
+                using (var jsonTextReader = new JsonTextReader(streamReader))
+                {
+                    responseData = this.serializer
+                        .Deserialize<ResponseData<IReadOnlyCollection<T>, P>>(jsonTextReader);
+
+                }
+            }
+        }
+
+        return responseData;
+    }
+
+
+    public async Task<string> ReadAsync(string uri, CancellationToken cancellationToken)
+    {
+        string response = string.Empty;
+        var request = new HttpRequestMessage(HttpMethod.Get, uri);
+        using (var result = await this.httpClient.SendAsync(request, cancellationToken))
+        {
+            using (var responseStream = await result.Content.ReadAsStreamAsync(cancellationToken))
+            {
+                using (var streamReader = new StreamReader(responseStream))
+                response = await streamReader.ReadToEndAsync();
+            }
+        }
+
+        return response;
+    }
     public async Task<ResponseData<T>> GetItemAsync<T>(string uri, CancellationToken cancellationToken)
     {
         var responseData = new ResponseData<T>();
@@ -44,7 +92,7 @@ public class ApiRequesterClient
             using (var responseStream = await result.Content.ReadAsStreamAsync(cancellationToken))
             {
                 using (var streamReader = new StreamReader(responseStream))
-                    using (var jsonTextReader = new JsonTextReader(streamReader))
+                using (var jsonTextReader = new JsonTextReader(streamReader))
                 {
                     responseData = this.serializer
                         .Deserialize<ResponseData<T>>(jsonTextReader);
@@ -100,5 +148,13 @@ public class ApiRequesterClient
         }
 
         return responseData;
+    }
+
+    public Uri BaseAddress
+    {
+        get
+        {
+            return this.httpClient.BaseAddress;
+        }
     }
 }
