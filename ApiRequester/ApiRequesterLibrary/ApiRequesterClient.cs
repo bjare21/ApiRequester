@@ -37,7 +37,7 @@ public class ApiRequesterClient : IApiRequesterClient
     }
 
     /// <summary>
-    /// Get synchronously collection of items and serialize them to given ResponseData with given Pagination object
+    /// Get ssynchronously collection of items and serialize them to given ResponseData with given Pagination object
     /// </summary>
     /// <typeparam name="T">Return type of requested items.</typeparam>
     /// <typeparam name="P">Return type of pagination data object.</typeparam>
@@ -103,9 +103,32 @@ public class ApiRequesterClient : IApiRequesterClient
         return responseData;
     }
 
+    public async Task<ResponseData<U>> UpdateAsync<T,U>(T item, string uri, CancellationToken cancellationToken)
+    {
+        var responseData = new ResponseData<U>();
+        var request = new HttpRequestMessage(HttpMethod.Put, uri);
+        var jsonData = JsonConvert.SerializeObject(item);
+        var stringContent = new StringContent(jsonData, UnicodeEncoding.UTF8, "application/json");
+
+        using (var response = await this.httpClient.PutAsync(uri, stringContent, cancellationToken))
+        {
+            using (var responseStream = await response.Content.ReadAsStreamAsync(cancellationToken))
+            {
+                using (var streamReader = new StreamReader(responseStream))
+                    using (var jsonTextReader = new JsonTextReader(streamReader))
+                {
+                    responseData = this.serializer.Deserialize<ResponseData<U>>(jsonTextReader);
+                }
+            }
+        }
+
+        return responseData;
+    }
+
     public async Task<ResponseData<T>> UpdateAsync<T>(T item, string uri, CancellationToken cancellationToken)
     {
         var responseData = new ResponseData<T>();
+        
 
         var request = new HttpRequestMessage(HttpMethod.Put, uri);
         var jsonData = JsonConvert.SerializeObject(item);
@@ -119,6 +142,29 @@ public class ApiRequesterClient : IApiRequesterClient
                 using (var jsonTextReader = new JsonTextReader(streamReader))
                 {
                     responseData = this.serializer.Deserialize<ResponseData<T>>(jsonTextReader);
+                }
+            }
+        }
+
+        return responseData;
+    }
+
+    public async Task<ResponseData<U>> PostAsync<T,U>(T item, string uri, CancellationToken cancellationToken)
+    {
+        var responseData = new ResponseData<U>();
+        var request = new HttpRequestMessage(HttpMethod.Post, uri);
+
+        var jsonData = JsonConvert.SerializeObject(item);
+        var stringContent = new StringContent(jsonData, UnicodeEncoding.UTF8, "application/json");
+
+        using (var response = await this.httpClient.PostAsync(uri, stringContent, cancellationToken))
+        {
+            using (var responseStream = await response.Content.ReadAsStreamAsync(cancellationToken))
+            {
+                using (var streamReader = new StreamReader(responseStream))
+                    using (var jsonTextReader = new JsonTextReader(streamReader))
+                {
+                    responseData = this.serializer.Deserialize<ResponseData<U>>(jsonTextReader);
                 }
             }
         }
