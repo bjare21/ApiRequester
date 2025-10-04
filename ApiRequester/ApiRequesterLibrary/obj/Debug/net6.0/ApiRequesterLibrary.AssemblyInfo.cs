@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiRequesterLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5007450091309886804dcc1e784f996b7acb8201")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+445382d107f5987cea59c1423f92a10831b24650")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiRequesterLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiRequesterLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
